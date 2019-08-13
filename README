@@ -1,0 +1,54 @@
+nadav366
+205457534
+Nadav Har-tuv
+I talked about the ex with Guy Katz, Yair Shemer, Itay Tayar and Ortal Glatt.
+
+In the exercise I wrote various functions, to practice working with recursion.
+
+Functions with linear recursion-
+* print_to_n: prints all numbers up to n in ascending order
+* print_reversed: prints all numbers up to n in descending order
+* is_prime: checks if number is prime (Using an auxiliary function)
+* exp_n_x: calculates the exponential amount
+* fact: calculates the n! (factorial)
+
+Functions with complex recursion-
+* play_hanoi: plays the game "hanoi towers"
+* print_sequences: prints the whole length-n string with values ​​from the list
+* print_no_repetition_sequences: prints the whole length-n string with values ​​
+    from the list, No rehearsals.
+* parentheses: prints all valid strings of n parentheses pairs
+* up_and_right: prints all possible ways from (0,0) to (n, k)
+    adding them to a string.
+* flood_fill: "fills" all the empty cells attached to the opening chamber.
+
+
+==========================
+= Computational analysis =
+==========================
+
+is_prim-
+The worst case is that the number "n" is not primary, Because then the
+software will have to perform the most calculations.
+Follow the "return false" line to count the number of checks.
+All other operations are done in a fixed length.
+The row will run a root of n times. Because we run backwards from root(n) to 2.
+Thus the running classics is O(sqrt(n)) That is O(n**0.5)
+
+
+print_no_repetition_sequences-
+n The length of the desired string, m Length of the list of possible characters
+Because the line "if char not in str:" works for each place in the string,
+for each letter in the list, it takes a fixed time and runs m ^ n times.
+This line will run most often in the function.
+Therefore, the complexity of the function is O(m^n)
+
+
+flood_fill-
+The worst case is that the entire table (except for the frame) is empty.
+n number of rows, m number of columns.
+Each operation of the function takes fixed time (one assignment, five decimals)
+The function will work at most n-2 to change all rows and m-2 to
+change all columns.
+And according to the O definition we will get -
+Therefore the complexity of the function is O(n*m)
